@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Front-End Developer</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/aa18b8969f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <div id="header">
+        <div class="=container">
+            <nav>
+                <img src="images/logo.png.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>HariPriya</span><br>Front-End Developer</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------about--------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Hello, I'm HariPriya, a passionate front-end developer dedicated to crafting immersive web experiences.
+                        I have a Bachelor's degree in Computer Science and a strong foundation in front-end development gained through "Lakireddy Bali Reddy College of Engineering".
+                        I specialize in HTML, CSS, and JavaScript, and have hands-on experience with popular front-end frameworks like React and Angular. I'm also well-versed in utilizing version control systems like Git and have a strong understanding of responsive web design principles.
+                        I am truly passionate about creating seamless user experiences and pushing the boundaries of what's possible on the web. I constantly strive to improve my skills and stay ahead of emerging technologies, allowing me to deliver innovative and user-centric solutions.
+                        In my free time, I enjoy working on personal projects that challenge me to explore new technologies. One of my recent projects involved developing a responsive e-commerce website using React and Redux, showcasing my ability to build robust and scalable web applications.
+                        When I'm not coding, I enjoy hiking in nature, experimenting with new recipes in the kitchen, and playing guitar to unwind.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onClick="opentab('skills')">Skills</p>
+                        <p class="tab-links"  onClick="opentab('experience')">Experience</p>
+                        <p class="tab-links"  onClick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>App Developement</span><br>Building Android/IOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023</span><br>Web App Development Internship at IBM SkillsBuild</li>
+                            <li><span>2023</span><br>UI/UX from Coursera</li>
+                            <li><span>2022</span><br>App Developement from IEEE Institute</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020 - 2024</span><br>BTech in Lakireddy Bali Reddy College of Engineering</li>
+                            <li><span>2018 - 2020</span><br>Intermediate from Sri Chaitanya College</li>
+                            <li><span>2007 - 2018</span><br>Schooling from Gowtham school</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------services------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I specialize in crafting custom website designs that are tailored to the unique needs of my clients. From concept to execution, I create visually stunning websites that engage users and deliver a seamless browsing experience.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-user"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I believe in putting the user at the center of the design process. By conducting thorough user research and creating wireframes and prototypes, I design intuitive interfaces that guide users seamlessly through the website, resulting in a positive and engaging experience.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>I specialize in creating mobile app designs that seamlessly blend aesthetics with functionality. Through a deep understanding of mobile app design principles, I craft visually captivating and user-friendly interfaces that provide an exceptional user experience.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <!-- -----------portfolio----------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app was designed for music enthusiasts of all genres, providing them with a seamless and immersive musical experience. Download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app boasted a user-friendly interface that prioritized ease of use and intuitive navigation.users can discover products of interest. Download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+     <!-- -----------contact----------- -->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>chavaharipriya1@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>9121456378</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>               
+             </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Haripriya. Made with <i class="fa-solid fa-heart"></i> by IBM SkillsBuild</p>
+        </div>
+     </div>
+
+
+
+    <script>
+
+          var tablinks = document.getElementsByClassName("tab-links");
+          var tabcontents = document.getElementsByClassName("tab-contents");
+
+          function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+          }
+          event.currentTarget.classList.add("active-link");
+          document.getElementById(tabname).classList.add("active-tab")
+          }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwAn6P9WuItjlpSpoaF8Tsc-LyVNnKT-hQ8si7ck6fIiJaX1fQcwj3UhMBdpy_vhR55/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    </body>
+</html>
